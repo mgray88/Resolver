@@ -26,10 +26,14 @@
 
 #if os(iOS)
 import UIKit
+#if canImport(SwiftUI)
 import SwiftUI
+#endif
 #elseif os(macOS) || os(tvOS) || os(watchOS)
 import Foundation
+#if canImport(SwiftUI)
 import SwiftUI
+#endif
 #else
 import Foundation
 #endif

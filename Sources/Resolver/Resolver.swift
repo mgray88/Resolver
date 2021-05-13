@@ -878,6 +878,7 @@ public extension UIViewController {
 }
 
 #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
+#if canImport(SwiftUI)
 /// Immediate injection property wrapper for SwiftUI ObservableObjects. This wrapper is meant for use in SwiftUI Views and exposes
 /// bindable objects similar to that of SwiftUI @observedObject and @environmentObject.
 ///
@@ -902,5 +903,6 @@ public extension UIViewController {
         return self.$service
     }
 }
+#endif
 #endif
 #endif

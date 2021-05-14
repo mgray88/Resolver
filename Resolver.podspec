@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source_files  = "Classes", "Sources/Resolver/*.swift"
   s.swift_version = '5.1'
 
-  s.ios.deployment_target = "11.0"
+  s.ios.deployment_target = "10.0"
   s.ios.framework  = 'UIKit'
 
   s.tvos.deployment_target = "11.0"
